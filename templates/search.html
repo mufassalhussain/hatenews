@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %} Articles {% endblock title %}
+{% block body %}
+
+<div class="container my-2">
+    <form name="searchform" action="/" method="POST">
+      <div class="searchbox">
+        <input class="search_input" type="text" name="query" placeholder="Type any Keyword">
+
+      </div>
+    </form>
+    <br>
+</div>
+
+<div class="container" style="margin-top:7%">
+  <h1>Result related to "{{query}}"</h1>
+    <br>
+
+    <div class="col-md-12">
+<div class="card text-dark bg-light mb-3" >
+  <div class="card-body">
+      <h3>
+      <a href={{actual_link}} class="card-title" style="color: black">{{title}}</a>
+          </h3>
+      <div class="mb-1 text-muted">{{time}}</div>
+    <p class="card-text">{{description}}</p>
+      <a href={{actual_link}} class="gradienttxt">Continue reading...</a>
+  </div>
+</div>
+  </div>
+    <br>
+
+    <center>
+        <div class="d-inline-block mb-2 text-primary gradienttxt">
+    <h1>Visualization of Result</h1>
+            <h8>Detected Hate or No Hate (in percentage).</h8>
+    <br>
+            <br>
+</div>
+    </center>
+
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title  gradienttxt">Pie Chart</h5>
+          <hr>
+<div id="piechart" style="width: 500px; height: 500px;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title gradienttxt">Donut Chart</h5>
+<hr>
+   <div id="donutchart" style="width: 500px; height: 500px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+
+    <div class="card w-100">
+  <div class="card-body">
+    <h5 class="card-title gradienttxt">Bar Chart</h5>
+<hr>
+      <div id="chart_div"></div>
+      </div>
+</div>
+    <br>
+
+   <footer class="site-footer">
+                  <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p>Project introduced by Hamaz & Faizan.</p>
+          </div>
+        </div>
+      </div>
+</footer>
+
+</div>
+
+{% endblock body %}
