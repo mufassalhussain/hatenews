@@ -1,12 +1,11 @@
 Flask==2.0.1
 Keras==2.4.3
-Keras-Preprocessing==1.1.2
 bs4==0.0.1
 h5py==3.1.0
 joblib==1.0.1
 keras-nightly==2.5.0.dev2021032900
 nltk==3.6.2
-numpy==1.9.1
+numpy
 pandas==1.2.4
 regex==2021.4.4
 requests==2.25.1
