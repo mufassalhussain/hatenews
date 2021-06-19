@@ -6,7 +6,7 @@ h5py==3.1.0
 joblib==1.0.1
 keras-nightly==2.5.0.dev2021032900
 nltk==3.6.2
-numpy==1.20.3
+numpy==1.9.1
 pandas==1.2.4
 regex==2021.4.4
 requests==2.25.1
