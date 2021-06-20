@@ -2,7 +2,6 @@ Flask==2.0.1
 Keras==2.4.3
 joblib==1.0.1
 keras-nightly==2.5.0.dev2021032900
-nltk==3.6.2
 numpy
 pandas
 regex==2021.4.4
